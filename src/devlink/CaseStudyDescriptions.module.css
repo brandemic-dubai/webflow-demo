@@ -1,0 +1,17 @@
+.case_study-texts-description {
+  display: flex;
+  width: 100%;
+  max-width: 41rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  grid-column-gap: 3.25rem;
+  grid-row-gap: 3.25rem;
+}
+
+@media screen and (max-width: 479px) {
+  .case_study-texts-description {
+    grid-column-gap: 1.25rem;
+    grid-row-gap: 1.25rem;
+  }
+}
