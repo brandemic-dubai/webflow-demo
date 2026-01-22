@@ -1,0 +1,36 @@
+.custom-cursor {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 9007199254740991;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  pointer-events: none;
+}
+
+@media screen and (max-width: 479px) {
+  .custom-cursor {
+    display: none;
+  }
+}
+
+.inner-dot {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+
+  width: 1rem;
+  height: 1rem;
+
+  border: 1.5px solid var(--base-color-brand--primary-color);
+  border-radius: 50%;
+
+  opacity: 0;
+
+  transform: translate(-50%, -50%);
+}

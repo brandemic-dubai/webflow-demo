@@ -1,0 +1,39 @@
+.page-loader {
+  position: fixed;
+  z-index: 999999999;
+
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--base-color-brand--dark-color);
+
+  clip-path: circle(150% at 50% 50%);
+
+  visibility: hidden;
+}
+
+.page-loader_brandemic-logo {
+  width: 24rem;
+  opacity: 1;
+  color: #442d87;
+}
+
+.brandemic_svg-path {
+  opacity: 0.15;
+  fill: transparent;
+  stroke: #5634BC;
+  stroke-width: 52px;
+}
+
+.brandemic_svg-path.is-brand-color {
+  display: none;
+  opacity: 100;
+  stroke: #38C67F;
+}
+
+.brandemic_svg-path.is-purple-2 {
+  stroke: #442D87;
+}
